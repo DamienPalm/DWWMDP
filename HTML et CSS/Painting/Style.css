@@ -1,0 +1,97 @@
+  @font-face
+{
+    font-family: "Light";
+    src: url("/static/Roboto-Light.ttf");
+}
+
+@font-face
+{
+    font-family: "italic";
+    src: url("/Static/Roboto-Italic.ttf");
+}
+
+@font-face {
+    font-family: "Black";
+    src: url("/Static/Roboto-Black.ttf");
+}
+
+@font-face {
+    font-family: "Bold";
+    src: url("Static/Roboto-Bold.ttf");
+}
+
+#body-main
+{
+    background-color: #FF8500;
+    margin-left: 243px;
+    margin-right: 243px;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFFFF;
+    margin: 0;
+   
+}
+
+
+h1
+{
+    font-family: "Black";
+    color: #FFFFFF;
+    font-size: 66px;
+    margin-left: 102px;
+    margin-right: 102px;
+    letter-spacing: 2px;
+    margin-top:0;
+    padding-top: 30px;
+}
+
+h2
+{
+    font-family: "Bold";
+    color: #000000;
+    font-size: 24px;
+    margin-left: 102px;
+    margin-right: 102px;
+    letter-spacing: 1px;
+}
+
+p
+{
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: "Light";
+    margin-left: 102px;
+    margin-right: 102px;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.italic
+{
+    color: #1E1E1E;
+    font-size: 14px;
+    font-family: "italic";
+    border-top: 1px #1E1E1E solid;
+    border-bottom: 1px #1E1E1E solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 450px;
+    margin-right: 102px;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+ul
+{
+    font-size: 14px;
+    margin-left: 102px;
+    margin-right: 102px;
+    margin-bottom: 0;
+    font-family: "Light";
+    letter-spacing: 1px;
+    line-height: 25px;
+    padding-bottom: 35px;
+}
