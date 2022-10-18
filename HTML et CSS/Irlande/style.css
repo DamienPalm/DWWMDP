@@ -9,14 +9,19 @@ body{
 
 #main-body{
     background-color: #FAF4D4;
-    margin-left: 314px;
-    margin-right: 314px;
+    margin-left: 20%;
+    margin-right: 20%;
     background-position: center;
     margin-bottom: 0;
 }
 
-.header{
+header{
     margin-top: 0;
+}
+
+#header{
+    height: 100%;
+    width: 100%;
 }
 
 h1{
@@ -25,38 +30,49 @@ h1{
     color:#F2B46C;
     font-weight: lighter;
     letter-spacing: 5px;
-    margin-left: 75px;
+    margin-left: 7%;
 }
 
 .logo{
-    margin-left: 75px;
+    margin-left: 7%;
 }
 
 p{
     font-family: "Roboto";
-    font-size: 14px;
+    font-size: 97%;
     letter-spacing: 1px;
-    line-height: 25px;
-    margin-left: 200px;
-    margin-right: 200px;
-    padding: 10px;
+    line-height: 200%;
+    margin-left: 14%;
+    margin-right: 14%;
+    padding:1%;
 }
 
 .italic{
     font-family: 'Times New Roman', Times, serif;
     color: #7D7C7C;
-    font-size: 18px;
+    font-size: 130%;
     font-style: italic;
     letter-spacing: 1px;
-    margin-left: 140px;
-    margin-right: 140px;
+    margin-left: 7%;
+    margin-right: 7%;
     border-left: 1px #7D7C7C solid;
-    padding-left: 15px;
+    padding-left: 2%;
+    line-height: 150%
 }
 
 a{
-    margin-left: 140px;
-    margin-right: 140px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#lac{
+    height: 70%;
+    width: 70%;
+}
+
+#foret{
+    height: 70%;
+    width: 70%;
 }
 
 span{
@@ -69,14 +85,14 @@ strong{
 
 h2{
     font-family: "Roboto";
-    margin-left: 140px;
+    margin-left: 7%;
     color: #6894A9;
 }
 
 ul{
     font-family: "Roboto";
     font-size: 14px;
-    margin-left: 175px;
-    margin-right: 175px;
-    line-height: 25px;
+    margin-left: 18%;
+    margin-right: 18%;
+    line-height: 200%;
 }
