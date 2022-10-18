@@ -18,12 +18,15 @@
     src: url(Static/Roboto-Light.ttf);
 }
 
+*{
+    box-sizing: border-box;
+}
+
 #body-main{
     background-color: #ff8500;
     margin-left: 243px;
     margin-right: 243px;
     background-position: center;
-    box-sizing: border-box;
 }
 
 body{
@@ -67,7 +70,7 @@ p{
     color: #1e1e1e;
     font-size: 16px;
     letter-spacing: 1px;
-    margin-left: 450px;
+    margin-left: 400px;
     margin-right: 102px;
     border-top: 1px #1e1e1e solid;
     border-bottom: 1px #1e1e1e solid;
