@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "black";
+    src: url(Static/Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: "bold";
+    src: url(Static/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: "italic";
+    src: url(Static/Roboto-Italic.ttf);
+}
+
+@font-face {
+    font-family: "light";
+    src: url(Static/Roboto-Light.ttf);
+}
+
+#body-main{
+    background-color: #ff8500;
+    margin-left: 243px;
+    margin-right: 243px;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffff;
+    margin: 0;
+}
+
+h1{
+    font-family: "black";
+    color: #ffffff;
+    font-size: 66px;
+    letter-spacing: 2px;
+    margin-left: 102px;
+    margin-right: 102px;
+    margin-top: 0;
+    padding-top: 30px;
+
+}
+
+h2{
+    font-family: "bold";
+    color: #000000;
+    font-size: 28px;
+    letter-spacing: 1px;
+    margin-left: 102px;
+    margin-right: 102px;
+}
+
+p{
+    font-family: "light";
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-left: 102px;
+    margin-right: 102px;
+    line-height: 25px;
+}
+
+.italic{
+    font-family: "italic";
+    color: #1e1e1e;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-left: 600px;
+    margin-right: 102px;
+    border-top: 1px #1e1e1e solid;
+    border-bottom: 1px #1e1e1e solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 25px;
+}
+
+ul{
+    font-family: "light";
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-left: 102px;
+    margin-right: 102px;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+    line-height: 25px;
+}
