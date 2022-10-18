@@ -5,8 +5,8 @@
 body{
     background-color: #EFE784;
     margin: 0;
-    margin-left: 315px;
-    margin-right: 315px;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 .parent{
@@ -22,14 +22,14 @@ body{
 
 .child1{
     position: absolute;
-    top: 80px;
-    left: 600px;
+    top: 7%;
+    left: 38%;
 }
 
 .child2{
     position: absolute;
-    top: 190px;
-    left: 650px;
+    top: 19%;
+    left: 40%;
     font-family: "Roboto";
     text-transform: uppercase;
     color: #EFE784;
@@ -39,51 +39,57 @@ body{
 
 .grey{
     background-color: #3E3838;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .white{
     background-color: #ffffff;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .blue{
     background-color: #6CBCB3;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .dark{
     background-color: #000000;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 5%;
+    padding-bottom: 10%;
 }
 
 h1{
     font-family: "Roboto";
-    font-size: 30px;
+    font-size: 190%;
     text-transform: uppercase;
-
+    letter-spacing: 20px;
+    font-weight: lighter;
+    border-top: 1px #EFE784 solid;
+    border-bottom: 1px #EFE784 solid;
+    margin-inline-start: 39%;
+    margin-inline-end: 43%;
 }
 
 h2{
     font-family: "Roboto";
-    font-size: 30px;
+    font-size: 190%;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #ffffff;
     font-weight: lighter;
-    margin-left: 150px;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 p{
     font-family: "Roboto";
-    font-size: 14px;
+    font-size: 105%;
     color: #ffffff;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .centre{
@@ -100,5 +106,19 @@ p{
 }
 
 a{
-    margin-left: 150px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.logo{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+span{
+    color: #EFE784;
+}
+
+.caps{
+    color: #ffffff;
+    text-transform: uppercase;
 }
