@@ -24,8 +24,8 @@
 
 #body-main{
     background-color: #ff8500;
-    margin-left: 243px;
-    margin-right: 243px;
+    margin-left: 15%;
+    margin-right: 15%;
     background-position: center;
 }
 
@@ -37,56 +37,56 @@ body{
 h1{
     font-family: "black";
     color: #ffffff;
-    font-size: 66px;
+    font-size: 500%;
     letter-spacing: 2px;
-    margin-left: 102px;
-    margin-right: 102px;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 0;
-    padding-top: 30px;
+    padding-top: 3%;
 
 }
 
 h2{
     font-family: "bold";
     color: #000000;
-    font-size: 28px;
+    font-size: 220%;
     letter-spacing: 1px;
-    margin-left: 102px;
-    margin-right: 102px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 p{
     font-family: "light";
     color: #ffffff;
-    font-size: 16px;
+    font-size: 110%;
     letter-spacing: 1px;
-    margin-left: 102px;
-    margin-right: 102px;
-    line-height: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 225%;
 }
 
 .italic{
     font-family: "italic";
     color: #1e1e1e;
-    font-size: 16px;
+    font-size: 110%;
     letter-spacing: 1px;
-    margin-left: 400px;
-    margin-right: 102px;
+    margin-left: 40%;
+    margin-right: 10%;
     border-top: 1px #1e1e1e solid;
     border-bottom: 1px #1e1e1e solid;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    line-height: 25px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    line-height: 225%;
 }
 
 ul{
     font-family: "light";
     color: #000000;
-    font-size: 16px;
+    font-size: 110%;
     letter-spacing: 1px;
-    margin-left: 102px;
-    margin-right: 102px;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-bottom: 0;
-    padding-bottom: 30px;
-    line-height: 25px;
+    padding-bottom: 3%;
+    line-height: 225%;
 }
