@@ -15,17 +15,14 @@ body{
     height: 250px;
 }
 
-#header{
-    width: 100%;
-    height: 100%;
-}
-
 .child1{
     position: absolute;
+    width: 100%;
+    height: 100%;
     top: 7%;
     left: 38%;
 }
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
 .child2{
     position: absolute;
     top: 19%;
@@ -35,6 +32,26 @@ body{
     color: #EFE784;
     font-size: 30px;
     letter-spacing: 20px;
+}
+
+#header{
+    width: 100%;
+    height: 100%;
+}
+
+#avenger{
+    width: 70%;
+    height: 70%;
+}
+
+#woman{
+    width: 70%;
+    height: 70%;
+}
+
+#star{
+    width: 70%;
+    height: 70%;
 }
 
 .grey{
@@ -90,6 +107,7 @@ p{
     color: #ffffff;
     margin-left: 15%;
     margin-right: 15%;
+    line-height: 200%;
 }
 
 .centre{
@@ -112,6 +130,8 @@ a{
 .logo{
     margin-left: 10%;
     margin-right: 10%;
+    width: 20%;
+    height: 20%;
 }
 
 span{
