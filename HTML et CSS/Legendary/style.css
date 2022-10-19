@@ -90,8 +90,11 @@ h1{
     font-weight: lighter;
     border-top: 1px #EFE784 solid;
     border-bottom: 1px #EFE784 solid;
-    margin-inline-start: 39%;
-    margin-inline-end: 40%;
+    display: inline;
+    position: relative;
+    text-align: center;
+    margin: 0;
+    padding-left: 3%;
 }
 
 h2{
@@ -114,7 +117,7 @@ p{
     line-height: 200%;
 }
 
-.centre{
+#centre{
     color: #EFE784;
     text-align: center;
 }
