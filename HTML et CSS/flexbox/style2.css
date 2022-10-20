@@ -20,6 +20,14 @@
     gap: 1%;
 }
 
+.container2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 11.1%;
+    width: 74%;
+}
+
 header{
     background-color: orange;
     width: 100%;
@@ -32,10 +40,21 @@ nav{
     height: 45%;
 }
 
-section{
+.a{
     background-color: yellow;
-    flex-basis: 74%;
-    height: 45%;
+    height: 25%;
+}
+
+.b{
+    background-color: blue;
+    flex-basis: 100;
+    height: 25%;
+}
+
+.c{
+    background-color: greenyellow;
+    flex-basis: 100;
+    height: 25%;
 }
 
 footer{
