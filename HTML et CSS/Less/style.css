@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container1 {
+  background-color: yellow;
+}
+.container1 h2 {
+  font-size: 35px;
+  color: red;
+}
+.container1 p {
+  line-height: 150%;
+  font-size: 25px;
+}
+.container1 p:nth-of-type(1) {
+  color: red;
+}
+.container1 p:nth-of-type(2) {
+  color: teal;
+}
+.container1 p:nth-of-type(2) span {
+  color: bisque;
+}
+.container2 {
+  background-color: aquamarine;
+}
+.container2 h2 {
+  font-size: 50px;
+  color: green;
+}
+.container2 p {
+  line-height: 150%;
+  font-size: 25px;
+}

@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container1{
+    background-color: yellow;
+    h2{
+        font-size: 35px;
+        color: red;
+    }
+    p{
+        line-height: 150%;
+        font-size: 25px;
+        &:nth-of-type(1){
+            color: red;
+        }
+        &:nth-of-type(2){
+            color: teal;
+            span{
+            color: bisque;
+            }
+        }
+    }
+}
+
+.container2{
+    background-color: aquamarine;
+    h2{
+        font-size: 50px;
+        color: green;
+    }
+    p{
+        line-height: 150%;
+        font-size: 25px;
+    }
+}
