@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #EFE784;
+    width: 1193px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    font-family: "Roboto";
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    text-align: center;
+    color: #EFE784;
+}
+
+h2{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    margin: 10px;
+}
+
+p{
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.container1{
+    display: flex;
+    flex-direction: column;
+    background-image: url(/img/header1.jpg);
+    background-repeat: no-repeat;
+    flex: 1;
+    justify-content: space-around;
+    padding: 50px;
+    div{
+        text-transform: uppercase;
+        font-size: 28px;
+        letter-spacing: 20px;
+        font-weight: lighter;
+    }
+}
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-around;
+    background-color: #3E3838;
+    padding: 50px 150px;
+    align-content: center;
+    h1{
+        text-transform: uppercase;
+        font-weight: lighter;
+        letter-spacing: 5px;
+        border-top: #EFE784 1px solid;
+        border-bottom: #EFE784 1px  solid;
+    }
+}
+
+.container3{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: space-around;
+    padding: 50px 150px;
+    background-color: #ffffff;
+    h2{
+        color: #6CBCB3;
+    }
+    p{
+        &:nth-of-type(2){
+            color: #6CBCB3;
+        }
+    }
+}
+
+.container4{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: space space-around;
+    padding: 50px 150px;
+    background-color: #6CBCB3;
+    p{
+        &:nth-of-type(2){
+            color: #ffffff;
+        }
+    }
+}
+
+.container5{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: space-around;
+    padding: 50px 150px;
+    background-color: #3E3838;
+    color: #ffffff;
+}
+
+.container6{
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+    padding: 50px 100px;
+    background-color: #000000;
+    p{
+        color: #ffffff;
+    }
+    span{
+        &:nth-of-type(1){
+            text-transform: uppercase;
+        }
+        &:nth-of-type(2){
+            color: #EFE784;
+        }
+    }
+}
+
+
