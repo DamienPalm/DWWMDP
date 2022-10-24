@@ -29,6 +29,12 @@ p {
   font-size: 14px;
   line-height: 25px;
 }
+a .grande {
+  display: block;
+}
+a .petite {
+  display: none;
+}
 .container1 {
   display: flex;
   flex-direction: column;
@@ -43,6 +49,15 @@ p {
   font-size: 28px;
   letter-spacing: 20px;
   font-weight: lighter;
+}
+.container1 div:nth-of-type(1) {
+  align-self: center;
+}
+.container1 div:nth-of-type(1) .grande {
+  display: block;
+}
+.container1 div:nth-of-type(1) .petite {
+  display: none;
 }
 .container2 {
   display: flex;
@@ -101,6 +116,12 @@ p {
   padding: 50px 100px;
   background-color: #000000;
 }
+.container6 div .grande {
+  display: block;
+}
+.container6 div .petite {
+  display: none;
+}
 .container6 p {
   color: #ffffff;
 }
@@ -111,7 +132,7 @@ p {
   color: #EFE784;
 }
 /*--------------------- Responsive -------------------*/
-@media screen and (max-width: 748px) {
+@media screen and (min-width: 361px) and (max-width: 748px) {
   body {
     width: 748px;
     padding: 1px;
@@ -146,5 +167,70 @@ p {
   .container5 {
     height: 100vh;
     padding: 25px 50px;
+  }
+}
+@media screen and (max-width: 360px) {
+  body {
+    width: 360px;
+    padding: 1px;
+  }
+  header {
+    height: 100vh;
+  }
+  a .grande {
+    display: none;
+  }
+  a .petite {
+    display: block;
+  }
+  .container1 {
+    background-image: url(/img/HeaderMobile.jpg);
+  }
+  .container1 div:nth-of-type(1) {
+    align-self: center;
+  }
+  .container1 div:nth-of-type(1) .grande {
+    display: none;
+  }
+  .container1 div:nth-of-type(1) .petite {
+    display: block;
+  }
+  .container1 div:nth-of-type(2) {
+    font-size: 15px;
+  }
+  .container2 {
+    height: 100vh;
+    padding: 61px 30px;
+  }
+  .container3 {
+    height: 100vh;
+    padding: 61px 30px;
+  }
+  .container3 a {
+    align-self: center;
+  }
+  .container4 {
+    height: 100vh;
+    padding: 61px 30px;
+  }
+  .container4 a {
+    align-self: center;
+  }
+  .container5 {
+    height: 100vh;
+    padding: 61px 30px;
+  }
+  .container5 a {
+    align-self: center;
+  }
+  .container6 {
+    height: 25vh;
+    padding: 30px;
+  }
+  .container6 div .grande {
+    display: none;
+  }
+  .container6 div .petite {
+    display: block;
   }
 }
