@@ -14,35 +14,71 @@
   </head>
 
   <body>
-    <main>
-      <header>
-        <p>To-do List</p>
-      </header>
+    <main class="container">
+      <div class="container1">
+        <div>To-do List</div>
+      </div>
 
-      <table>
-        <thead>
-          <tr>
-            <th></th>
-            <th>Tâche</th>
-            <th>Etat de la tâche</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td data-title=""><input type="checkbox"/></td>
-            <td data-title="Tâche">Chercher des idées</td>
-            <td data-title="Etat de la tache" type="select">
-              <select>
-                <option value="."></option>
-                <option value="En cours">En cours</option>
-                <option value="En attente">En attente</option>
-                <option value="Bloqué">Bloqué</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
+      <div class="container2">
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Tâche</th>
+              <th>Etat de la tâche</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-title=""><input type="checkbox" /></td>
+              <td data-title="Tâche">Chercher des idées</td>
+              <td data-title="Etat de la tache" type="select">
+                <select>
+                  <option value="."></option>
+                  <option value="En cours">En cours</option>
+                  <option value="En attente">En attente</option>
+                  <option value="Bloqué">Bloqué</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td data-title=""><input type="checkbox" /></td>
+              <td data-title="Tâche">Trouver des images</td>
+              <td data-title="Etat de la tache" type="select">
+                <select>
+                  <option value="."></option>
+                  <option value="En cours">En cours</option>
+                  <option value="En attente">En attente</option>
+                  <option value="Bloqué">Bloqué</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td data-title=""><input type="checkbox" /></td>
+              <td data-title="Tâche">Faire la maquette</td>
+              <td data-title="Etat de la tache" type="select">
+                <select>
+                  <option value="."></option>
+                  <option value="En cours">En cours</option>
+                  <option value="En attente">En attente</option>
+                  <option value="Bloqué">Bloqué</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td data-title=""><input type="checkbox" /></td>
+              <td data-title="Tâche">Enregistrer la maquette</td>
+              <td data-title="Etat de la tache" type="select">
+                <select>
+                  <option value="."></option>
+                  <option value="En cours">En cours</option>
+                  <option value="En attente">En attente</option>
+                  <option value="Bloqué">Bloqué</option>
+                </select>
+              </td>
+            </tr>
             <td data-title=""><input type="checkbox" /></td>
-            <td data-title="Tâche">Trouver des images</td>
+            <td data-title="Tâche">Faire le HTML</td>
             <td data-title="Etat de la tache" type="select">
               <select>
                 <option value="."></option>
@@ -51,81 +87,47 @@
                 <option value="Bloqué">Bloqué</option>
               </select>
             </td>
-          </tr>
-          <tr>
-            <td data-title=""><input type="checkbox" /></td>
-            <td data-title="Tâche">Faire la maquette</td>
-            <td data-title="Etat de la tache" type="select">
-              <select>
-                <option value="."></option>
-                <option value="En cours">En cours</option>
-                <option value="En attente">En attente</option>
-                <option value="Bloqué">Bloqué</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <td data-title=""><input type="checkbox" /></td>
-            <td data-title="Tâche">Enregistrer la maquette</td>
-            <td data-title="Etat de la tache" type="select">
-              <select>
-                <option value="."></option>
-                <option value="En cours">En cours</option>
-                <option value="En attente">En attente</option>
-                <option value="Bloqué">Bloqué</option>
-              </select>
-            </td>
-          </tr>
-          <td data-title=""><input type="checkbox" /></td>
-          <td data-title="Tâche">Faire le HTML</td>
-          <td data-title="Etat de la tache" type="select">
-            <select>
-              <option value="."></option>
-              <option value="En cours">En cours</option>
-              <option value="En attente">En attente</option>
-              <option value="Bloqué">Bloqué</option>
-            </select>
-          </td>
-          <tr>
-            <td data-title=""><input type="checkbox" /></td>
-            <td data-title="Tâche">Faire le CSS</td>
-            <td data-title="Etat de la tache" type="select">
-              <select>
-                <option value="."></option>
-                <option value="En cours">En cours</option>
-                <option value="En attente">En attente</option>
-                <option value="Bloqué">Bloqué</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <td data-title=""><input type="checkbox" /></td>
-            <td data-title="Tâche">Enregistrer le tout</td>
-            <td data-title="Etat de la tache" type="select">
-              <select>
-                <option value="."></option>
-                <option value="En cours">En cours</option>
-                <option value="En attente">En attente</option>
-                <option value="Bloqué">Bloqué</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <td data-title=""><input type="checkbox" /></td>
-            <td data-title="Tâche">Envoyer sur Github</td>
-            <td data-title="Etat de la tache" type="select">
-              <select>
-                <option value="."></option>
-                <option value="En cours">En cours</option>
-                <option value="En attente">En attente</option>
-                <option value="Bloqué">Bloqué</option>
-              </select>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+            <tr>
+              <td data-title=""><input type="checkbox" /></td>
+              <td data-title="Tâche">Faire le CSS</td>
+              <td data-title="Etat de la tache" type="select">
+                <select>
+                  <option value="."></option>
+                  <option value="En cours">En cours</option>
+                  <option value="En attente">En attente</option>
+                  <option value="Bloqué">Bloqué</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td data-title=""><input type="checkbox" /></td>
+              <td data-title="Tâche">Enregistrer le tout</td>
+              <td data-title="Etat de la tache" type="select">
+                <select>
+                  <option value="."></option>
+                  <option value="En cours">En cours</option>
+                  <option value="En attente">En attente</option>
+                  <option value="Bloqué">Bloqué</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td data-title=""><input type="checkbox" /></td>
+              <td data-title="Tâche">Envoyer sur Github</td>
+              <td data-title="Etat de la tache" type="select">
+                <select>
+                  <option value="."></option>
+                  <option value="En cours">En cours</option>
+                  <option value="En attente">En attente</option>
+                  <option value="Bloqué">Bloqué</option>
+                </select>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-      <div>
+      <div class="container3">
         <input type="button" value="Ajouter" />
         <input type="button" value="Modifier" />
         <input type="button" value="Supprimer" />

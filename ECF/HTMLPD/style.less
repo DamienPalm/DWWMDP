@@ -8,146 +8,152 @@ body{
     background-color: #D1C7C8;
 }
 
-main{
+.container{
     background-image: url(img/Bureau.jpg);
     background-repeat: no-repeat;
     background-position: center;
     font-family: "Montserrat";
     width: 1200px;
-    height: 950px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
 }
 
-header{
-    text-transform: uppercase;
-    border: 1px #034846 solid;
-    background-color: #034846;
-    border-radius: 10px;
-    color: #ffffff;
-    padding: 10px 20px;
-    font-size: x-large;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    width: 25%;
+.container1{
+    display: flex;
     justify-content: center;
+    margin: 50px;
+    div{
+        font-size: xx-large;
+        font-weight: bolder;
+        text-transform: uppercase;
+        border: 1px solid #034846;
+        border-radius: 10px;
+        padding: 20px 40px;
+        color: #ffffff;
+        background-color: #034846;
+    }
 }
 
-p{
-    text-align: center;
-    font-weight: bolder;
-}
-
-table {
-    table-layout: fixed;
+.container2{
     display: flex;
-    width: 75%;
-    border-collapse: collapse;
-    border: 1px solid;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    flex-direction: column;
-}
-
-thead{
-    table-layout: fixed;
-    width: 100%;
-    border: 1px solid #000000;
-    background-color: #034846;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: large;
-    th{
-        border: 1px solid #000000;
-        padding: 10px;
-        &:nth-of-type(1){
-         width: 5%;
-        }
-        &:nth-of-type(2){
-         width: 83.3%;
-        }
-        &:nth-of-type(3){
-         width: 25%;
-        }
-    }
-}
-
-
-
-tbody{
-    table-layout: fixed;
-    width: 100%;
-    border: 1px solid;
-    display: flex;
-    flex-direction: column;
-    font-size: large;
-    tr{
-        &:nth-of-type(2n+1){
-            background-color: #D8D5DC;
-        }
-        &:nth-of-type(2n){
-            background-color: #F2F1F6;
-        }
-    }
-    td{
-        border: 1px solid #000000;
-        padding: 10px;
-        &:nth-of-type(1){
-            width: 5%;
-        }
-        &:nth-of-type(2){
-            width: 90%;
-        }
-        &:nth-of-type(3){
-            width: 25%;
-        }
-    }
-}
-
-
-div{
-    margin: 0 auto;
-    margin-bottom: 50px;
-    margin-top: 50px;
-}
-
-input{
-    background-color: #034846;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #ffffff;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-family: "Montserrat";
-}
-
-
-@media screen and (max-width: 748px) and (min-width: 361px) {
-    main{
-        width: 99%;
+    justify-content: center;
+    margin: 50px;
+    table{
+        border-collapse: collapse;
+        width: 75%;
     }
     thead{
+        background-color: #034846;
+        color: #ffffff;
+        font-size: large;
+        font-weight: bold;
         th{
+            border: 1px solid #000000;
+            padding: 20px;
+        }
+    }
+    tbody{
+        font-size: large;
+        td{
+            border: 1px solid #000000;
+            padding: 20px;
             &:nth-of-type(1){
-            width: 6%;
+                width: 5%;
             }
             &:nth-of-type(2){
-            width:71%;
+                width: 70%;
             }
             &:nth-of-type(3){
-            width: 18%;
+                width: 25%;
             }
         }
+        select{
+            font-size: large;
+        }
+        tr{
+            &:nth-of-type(2n+1){
+                background-color: #D8D5DC;
+            }
+            &:nth-of-type(2n){
+                background-color: #F2F1F6;
+            }
+        }
+    }
+    
+
+}
+
+.container3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px;
+    input{
+        background-color: #034846;
+        color: #ffffff;
+        font-size: x-large;
+        text-transform: uppercase;
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin: 10px;
+    }
+}
+
+
+/*--------------------Responsive--------------------*/
+
+
+@media screen and (max-width:748px) and (min-width:361px){
+    .container{
+        width: 99%;
+    }
+
+    .container1{
+        margin: 20px;
+        div{
+            font-size: x-large;
+        }
+    }
+
+    .container2{
+        margin: 20px;
+        table{
+            width: 95%;
+        }
+    }
+
+    .container3{
+        margin: 20px;
+        flex-direction: column;
     }
 }
 
 
 @media screen and (max-width: 360px) {
-    main{
+    .container{
         width: 99%;
+    }
+
+    .container1{
+        margin: 15px;
+        div{
+            font-size: large;
+        }
+    }
+
+    .container2{
+        margin: 10px;
+        tbody{
+            font-size: medium;
+        }
+    }
+
+    .container3{
+        flex-direction: column;
+        margin: 10px;
+        input{
+            font-size: medium;
+        }
     }
 }

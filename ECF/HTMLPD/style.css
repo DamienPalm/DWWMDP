@@ -6,126 +6,133 @@
 body {
   background-color: #D1C7C8;
 }
-main {
+.container {
   background-image: url(img/Bureau.jpg);
   background-repeat: no-repeat;
   background-position: center;
   font-family: "Montserrat";
   width: 1200px;
-  height: 950px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
-header {
-  text-transform: uppercase;
-  border: 1px #034846 solid;
-  background-color: #034846;
-  border-radius: 10px;
-  color: #ffffff;
-  padding: 10px 20px;
-  font-size: x-large;
-  margin: 0 auto;
-  margin-bottom: 50px;
-  margin-top: 50px;
-  width: 25%;
+.container1 {
+  display: flex;
   justify-content: center;
+  margin: 50px;
 }
-p {
-  text-align: center;
+.container1 div {
+  font-size: xx-large;
   font-weight: bolder;
+  text-transform: uppercase;
+  border: 1px solid #034846;
+  border-radius: 10px;
+  padding: 20px 40px;
+  color: #ffffff;
+  background-color: #034846;
 }
-table {
-  table-layout: fixed;
+.container2 {
   display: flex;
-  width: 75%;
-  border-collapse: collapse;
-  border: 1px solid;
-  margin: 0 auto;
-  margin-bottom: 50px;
-  margin-top: 50px;
-  flex-direction: column;
+  justify-content: center;
+  margin: 50px;
 }
-thead {
-  table-layout: fixed;
-  width: 100%;
-  border: 1px solid #000000;
+.container2 table {
+  border-collapse: collapse;
+  width: 75%;
+}
+.container2 thead {
   background-color: #034846;
   color: #ffffff;
+  font-size: large;
   font-weight: bold;
+}
+.container2 thead th {
+  border: 1px solid #000000;
+  padding: 20px;
+}
+.container2 tbody {
   font-size: large;
 }
-thead th {
+.container2 tbody td {
   border: 1px solid #000000;
-  padding: 10px;
+  padding: 20px;
 }
-thead th:nth-of-type(1) {
+.container2 tbody td:nth-of-type(1) {
   width: 5%;
 }
-thead th:nth-of-type(2) {
-  width: 83.3%;
+.container2 tbody td:nth-of-type(2) {
+  width: 70%;
 }
-thead th:nth-of-type(3) {
+.container2 tbody td:nth-of-type(3) {
   width: 25%;
 }
-tbody {
-  table-layout: fixed;
-  width: 100%;
-  border: 1px solid;
-  display: flex;
-  flex-direction: column;
+.container2 tbody select {
   font-size: large;
 }
-tbody tr:nth-of-type(2n+1) {
+.container2 tbody tr:nth-of-type(2n+1) {
   background-color: #D8D5DC;
 }
-tbody tr:nth-of-type(2n) {
+.container2 tbody tr:nth-of-type(2n) {
   background-color: #F2F1F6;
 }
-tbody td {
-  border: 1px solid #000000;
-  padding: 10px;
+.container3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 50px;
 }
-tbody td:nth-of-type(1) {
-  width: 5%;
-}
-tbody td:nth-of-type(2) {
-  width: 90%;
-}
-tbody td:nth-of-type(3) {
-  width: 25%;
-}
-div {
-  margin: 0 auto;
-  margin-bottom: 50px;
-  margin-top: 50px;
-}
-input {
+.container3 input {
   background-color: #034846;
-  text-transform: uppercase;
-  font-weight: bold;
   color: #ffffff;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  font-family: "Montserrat";
+  font-size: x-large;
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 10px;
 }
+/*--------------------Responsive--------------------*/
 @media screen and (max-width: 748px) and (min-width: 361px) {
-  main {
+  .container {
     width: 99%;
   }
-  thead th:nth-of-type(1) {
-    width: 6%;
+  .container1 {
+    margin: 20px;
   }
-  thead th:nth-of-type(2) {
-    width: 71%;
+  .container1 div {
+    font-size: x-large;
   }
-  thead th:nth-of-type(3) {
-    width: 18%;
+  .container2 {
+    margin: 20px;
+  }
+  .container2 table {
+    width: 95%;
+  }
+  .container3 {
+    margin: 20px;
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 360px) {
-  main {
+  .container {
     width: 99%;
+  }
+  .container1 {
+    margin: 15px;
+  }
+  .container1 div {
+    font-size: large;
+  }
+  .container2 {
+    margin: 10px;
+  }
+  .container2 tbody {
+    font-size: medium;
+  }
+  .container3 {
+    flex-direction: column;
+    margin: 10px;
+  }
+  .container3 input {
+    font-size: medium;
   }
 }
