@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #D1C7C8;
+}
+main {
+  background-image: url(img/Bureau.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Montserrat";
+  width: 1200px;
+  height: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  text-transform: uppercase;
+  border: 1px #034846 solid;
+  background-color: #034846;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: x-large;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  width: 25%;
+  justify-content: center;
+}
+p {
+  text-align: center;
+  font-weight: bolder;
+}
+table {
+  table-layout: fixed;
+  display: flex;
+  width: 75%;
+  border-collapse: collapse;
+  border: 1px solid;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  flex-direction: column;
+}
+thead {
+  table-layout: fixed;
+  width: 100%;
+  border: 1px solid #000000;
+  background-color: #034846;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: large;
+}
+thead th {
+  border: 1px solid #000000;
+  padding: 10px;
+}
+thead th:nth-of-type(1) {
+  width: 5%;
+}
+thead th:nth-of-type(2) {
+  width: 83.3%;
+}
+thead th:nth-of-type(3) {
+  width: 25%;
+}
+tbody {
+  table-layout: fixed;
+  width: 100%;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  font-size: large;
+}
+tbody tr:nth-of-type(2n+1) {
+  background-color: #D8D5DC;
+}
+tbody tr:nth-of-type(2n) {
+  background-color: #F2F1F6;
+}
+tbody td {
+  border: 1px solid #000000;
+  padding: 10px;
+}
+tbody td:nth-of-type(1) {
+  width: 5%;
+}
+tbody td:nth-of-type(2) {
+  width: 90%;
+}
+tbody td:nth-of-type(3) {
+  width: 25%;
+}
+div {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+input {
+  background-color: #034846;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Montserrat";
+}
