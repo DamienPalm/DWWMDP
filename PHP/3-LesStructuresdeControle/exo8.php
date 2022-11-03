@@ -3,7 +3,7 @@
 $quantite = readline("Nombre photocopie");
 $prix;
 
-if($quantite >= 31){
+if($quantite > 31){
     $prix = (0.1 * 10 + 0.09 * 20 + 0.08 * ($quantite - 31));
 }
 elseif($quantite > 10){
