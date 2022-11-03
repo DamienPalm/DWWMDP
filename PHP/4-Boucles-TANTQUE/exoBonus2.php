@@ -1,12 +1,13 @@
 <?php
 
 $nb = readline("mettre un nombre ");
-$compteur = 0;
-$factorielle;
+$compteur = 2;
+$factorielle = 1;
 
-while ($compteur != $nb){
+while ($compteur <= $nb){
+    $factorielle = $factorielle * $compteur;
     $compteur = $compteur + 1;
-    echo $nb*$compteur . "\n";
 }
 
+echo "La factorielle de " . $nb . " est de : " . $factorielle . "\n";
 ?>
