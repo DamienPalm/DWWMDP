@@ -14,10 +14,6 @@ while ($reste != 0){
     $nb2 = $reste;
 }
 
-elseif($nb2 > $nb1){
-    
-}
-
 echo "Le PGCD vaut : " . $nb1;
 
 ?>
