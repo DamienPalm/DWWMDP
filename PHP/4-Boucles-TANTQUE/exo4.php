@@ -6,6 +6,8 @@ $reste;
 
 if ($nb1 > $nb2){
     $reste = $nb1 % $nb2;
+    $nb1 = $nb2;
+    $nb2 = $reste;
 }
 
 while ($reste != 0){
@@ -16,4 +18,4 @@ while ($reste != 0){
 
 echo "Le PGCD vaut : " . $nb1;
 
-?>
+?>  

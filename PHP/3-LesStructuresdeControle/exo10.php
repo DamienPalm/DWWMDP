@@ -1,3 +1,4 @@
+
 <?php
 
 $jour = readline("jour");

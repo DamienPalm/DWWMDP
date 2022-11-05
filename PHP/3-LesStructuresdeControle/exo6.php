@@ -18,6 +18,6 @@ if ($heure >= 24){
     $heure = $heure - 24;
 }
 
-echo "Dans une minute, il sera : " . $heure . "h". $minute
+echo "Dans une minute, il sera : " . $heure . "h". $minute;
 
 ?>

@@ -9,6 +9,8 @@ $ppcm;
 
 if ($nb1 > $nb2){
     $reste = $nb1 % $nb2;
+    $nb1 = $nb2;
+    $nb2 = $reste;
 }
 
 while ($reste != 0){
