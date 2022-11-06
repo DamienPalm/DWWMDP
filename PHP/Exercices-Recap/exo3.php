@@ -1,7 +1,7 @@
 <?php
 
 $question;
-
+ 
 echo "Pensez à un personnage : Mlle Rose, le Professeur Violet,
 le Colonel Moutarde, le Révérend Olive ou Mme Leblanc." . "\n";
 
