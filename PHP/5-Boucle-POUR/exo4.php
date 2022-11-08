@@ -13,7 +13,6 @@ for ($i = 1 ; $i < 5 ; $i++){
         $min = $nb;
     }
 }
-echo ($max) . "\n";
-echo ($min);
+echo ($max) . "\n" . ($min);
 
 ?>
