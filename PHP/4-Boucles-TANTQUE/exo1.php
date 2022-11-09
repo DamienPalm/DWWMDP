@@ -2,8 +2,7 @@
 
 $nb = readline ("mettre un nombre entre 1 et 3 : ");
 
-
-while (filter_var ($nb, FILTER_VALIDATE_INT) != true) {
+while (filter_var ($nb, FILTER_VALIDATE_INT) != true){
     echo( $nb . " n'est pas un entier") . "\n";
     $nb = readline ("mettre un nombre entre 1 et 3 : ");
 }

@@ -16,6 +16,7 @@ for ($i = 1 ; $i <= $nb ; $i++){
     }
 }
 
-echo "Il y a : " . $valPositive . " valeurs positives" . "\n" . "Il y a : " . $valNegative . " valeurs négatives";
+echo "Il y a : " . $valPositive . " valeurs positives" . "\n" . 
+"Il y a : " . $valNegative . " valeurs négatives";
 
-?> 
+?>
