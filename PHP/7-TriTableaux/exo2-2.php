@@ -8,16 +8,16 @@ for ($i = 0 ; $i < $nb ; $i++){
     $tab [$i] = $saisie;
 }
 
-for ($i = 0 ; $i < $tab[$i]-1 ; $i++){
+for ($i = 0 ; $i < count ($tab)-1 ; $i++){
     $min = $i;
-    for ($j = 0 ; $i+1 < $tab[$i] ; $j++){
-        if ($tab[$j] < $tab[$min]){
+    for ($j = $i+1 ; $j < count ($tab) ; $j++){
+        if ($tab[$j] > $tab[$min]){
             $min = $j;
-            $temp = $tab[$min];
-            $tab[$min] = $tab[$i];
-            $tab[$i] = $temp;
         }
-    }  
+    }
+    $temp = $tab[$min];
+    $tab[$min] = $tab[$i];
+    $tab[$i] = $temp; 
 }
 
 foreach($tab as $valeur){
