@@ -5,6 +5,4 @@ $A = 3;
 
 echo "La variable A vaut :" . $A . "\n";
 echo "La variable B vaut :" . $B;
-
-
 ?>
