@@ -11,15 +11,23 @@ for ($i = 0; $i < $nb; $i++) {
 for ($i=0;$i<=count($tab)-2;$i++){
 
     if ($tab[$i] == $tab[$i+1]){
+        $estVrai = true;
+        echo "doublon" . "\n";
+    }
+
+    if ($tab[$i] !== $tab[$i+1]){
         $temp = $tab[$i];
         $tab[$i] = $tab[$i+1];
         $tab[$i+1] = $temp;
-        echo "doublon";
-        $estVrai = true;
     }
 }
 
 if ($estVrai == false){
-    echo "pas de doublon";
+    echo "pas de doublon" . "\n";
 }
+
+foreach($tab as $valeur){
+    echo $valeur . "\n";
+}
+
 ?>
