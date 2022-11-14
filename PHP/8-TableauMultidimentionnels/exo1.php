@@ -1,19 +1,29 @@
 <?php
 
-$tab = [];
-$valMax = 0;
+$tab = array() ;
+$saisieLigne = readline("entrez un nombre de lignes") ;
+$saisieCol = readline("entrez le nombre de colonnes") ;
+$max = 0 ;
 
-for ($i = 0 ; $i < 8 ; $i++){
-    for ($j = 0 ; $j < 12 ; $j++){
-        $tab[$i][$j] = rand (0, 50);
-        echo $tab[$i][$j];
+for($i=0;$i<=$saisieLigne;$i++){
+
+    for ($j=0;$j<=$saisieCol;$j++){
+ if($nombre>$max){
+            $max = $nombre ;
+            $jmax = $j ; 
+            $imax = $i ;
+        }
+        $tab[$i][$j] = $nombre = rand(1,50);
+        echo $tab[$i][$j] . "  ";
+
     }
-    echo "\n";
-    if ($valMax < $tab [$i]){
-        $valMax = $tab [$i];
-    }
+
+    echo "\n" ;
+
+
 }
 
-echo ($valMax);
+echo $max . " de position : ". $imax ."-" . $jmax ;
+
 
 ?>

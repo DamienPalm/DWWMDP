@@ -1,33 +1,22 @@
 <?php
+$tab = [4,8,7,9,3,12];
+$comp = 0;
 
-$nb = readline("Combien d'élément souhaitez vous saisir ? ");
-$tab = [];
-$estVrai = false;
-for ($i = 0; $i < $nb; $i++) {
-    $saisie = readline("Saisir les éléments du tableau : ");
-    $tab[$i] = $saisie;
+for($i = 0 ; $i < count($tab) ; $i++){
+    for($index = $i ; $index < count($tab)-1 ; $index++){
+        if($tab[$i] == $tab[$index+1]){
+            $comp++ ;
+
+        }
+
 }
-
-for ($i=0;$i<=count($tab)-2;$i++){
-
-    if ($tab[$i] == $tab[$i+1]){
-        $estVrai = true;
-        echo "doublon" . "\n";
-    }
-
-    if ($tab[$i] !== $tab[$i+1]){
-        $temp = $tab[$i];
-        $tab[$i] = $tab[$i+1];
-        $tab[$i+1] = $temp;
-    }
 }
-
-if ($estVrai == false){
-    echo "pas de doublon" . "\n";
+echo $comp . " " ;
+if($comp>0){
+    echo "doublon";
 }
-
-foreach($tab as $valeur){
-    echo $valeur . "\n";
+elseif($comp == 0){
+    echo "pas de doublon";
 }
 
 ?>

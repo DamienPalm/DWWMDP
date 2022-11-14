@@ -1,16 +1,27 @@
 <?php
 
-$tab = [5,2,3,4,1,9,8];
+$tab = [41, 33, 3, 2, 7, 22, 19, 1, 97, 71, 8, 25];
+$x = 1;
 
-while ($tab [$start] < $tab[$end]){
-    for ($i = 0; $i < $tab; $i++){
-        $temp = $tab[$start];
-        $tab[$start] = $tab[$end];
-        $tab[$end] = $temp;
-        $start++;
-        $end--;
+if (count($tab)%2==0) {
+
+    for ($i=0; $i<(count($tab)/2); $i++) {
+        $temp = $tab[count($tab)-$x];
+        $tab[count($tab)-$x] = $tab[$i];
+        $tab[$i] = $temp;
+        $x++;
+}
+} else {
+    for ($i=0;$i<(count($tab)/2)-0.5;$i++){
+        $garde=$tab[$i];
+        $tab[$i]=$tab[count($tab)-$x];
+        $tab[count($tab)-$x]=$garde;
+        $x++;
     }
 }
-echo $tab;
+
+foreach($tab as $valeur) {
+    echo $valeur . "\n";
+}
 
 ?>
