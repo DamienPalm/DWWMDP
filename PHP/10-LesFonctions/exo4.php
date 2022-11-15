@@ -3,8 +3,8 @@
 require "Fonction.php";
 
 $nb = readline("mettre un nombre ");
-$i = 0;
-
-echo multi($nb,$i) . "\n";
+for ($i = 1 ; $i <= 10 ; $i++){
+    echo multi($nb,$i) . "\n";
+}
 
 ?>

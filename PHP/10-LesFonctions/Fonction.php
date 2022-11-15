@@ -22,10 +22,37 @@ function PPCM ($nb1, $nb2){
 }
 
 function multi ($nb, $i){
-    for ($i=0 ; $i < 10 ; $i++){
-        $nb * $i . "\n";
-    }
     return ($nb * $i);
 }
 
+function factorielle ($nb, $i, $factorielle){
+    for ($i = 2 ; $i <$nb ; $i++){
+        $factorielle = $factorielle * $i;
+    }
+    return ($factorielle * $i);
+
+}
+
+function addition ($tab){
+    return (array_sum($tab));
+}
+
+function triangle ($i, $nb){
+    while ($i<$nb){
+        for ($j=0; $j<$i; $j++){
+            echo "* ";
+        }
+        echo "\n";
+        $i++;
+    }
+    while ($i>0){
+        for ($j = 0 ; $j<$i ; $j++){
+            echo "* ";
+        }
+        echo "\n";
+        $i--;
+    }
+
+    return;
+}
 ?>
