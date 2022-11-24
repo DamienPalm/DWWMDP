@@ -27,7 +27,7 @@ while($estVrai){
 }
 
 foreach($tab as $valeur){
-    echo $valeur . "\n";
+    echo $valeur . " ";
 }
 
 ?>
