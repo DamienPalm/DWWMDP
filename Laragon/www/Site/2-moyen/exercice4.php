@@ -23,7 +23,6 @@ $tabAnimaux =[
 echo affichage($tab1) . "<br>";
 echo affichage($tab2) . "<br>";
 echo affichage($tab3) . "<br>";
-
 ?>
 
 <?php

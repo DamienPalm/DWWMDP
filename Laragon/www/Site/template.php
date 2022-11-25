@@ -43,11 +43,9 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dificile</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
+            <?php for ($i = 1 ; $i<= 2 ; $i++) : ?>
+              <a class="dropdown-item" href="../site/3-difficile/exercice<?=$i ?>.php">exercice<?=$i ?></a>
+            <?php endfor; ?>
             </div>
           </li>
           <li class="nav-item dropdown">
