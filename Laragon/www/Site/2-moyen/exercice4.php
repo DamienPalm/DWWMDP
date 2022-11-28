@@ -2,9 +2,9 @@
 
 
 <form action="" method="get">
-    <input type="button" value="Animaux" />
-    <input type="button" value="Chien" />
-    <input type="button" value="Chat">
+    <input type="button" value="Animaux" name="Animaux"/>
+    <input type="button" value="Chien" name="Chien"/>
+    <input type="button" value="Chat" name="Chat"/>
 </form>
 
 <?php
