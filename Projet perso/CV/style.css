@@ -1,0 +1,29 @@
+.container{
+    background-color: rgb(213, 193, 166);
+    display: flex;
+}
+
+.container1{
+    background-color: aquamarine;
+}
+
+img{
+    height: 20em;
+}
+
+.container2{
+    display: flex;
+    flex-direction: column;
+}
+
+.containera, .containerb{
+    background-color: brown;
+    height: 20em;
+    width: 20em;
+}
+
+.container3{
+    background-color: aquamarine;
+    height: 40em;
+    width: 20em;
+}
