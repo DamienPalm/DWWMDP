@@ -13,7 +13,7 @@ function afficherTableau ($tab){
 }
 
 function calculerMoyenne ($tab){
-    echo "La moyenne du tableau est de " . array_sum($tab)/count($tab); 
+    echo (array_sum($tab)/count($tab)); 
 }
 
 function estTableauPair ($tab){
@@ -27,9 +27,5 @@ function estTableauPair ($tab){
         echo "Ce tableau ne contient pas que des nombres pairs";
     }
 }
-
-
-
-
 
 ?>

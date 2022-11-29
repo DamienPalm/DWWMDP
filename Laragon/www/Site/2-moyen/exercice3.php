@@ -6,6 +6,7 @@ require "fonction.php";
 $tab = [1, 2, 3];
 
  echo afficherTableau($tab) . "<br>";
+ echo "La moyenne du tableau est de ";
  echo calculerMoyenne($tab) . "<br>";
  echo estTableauPair($tab);
 ?>
