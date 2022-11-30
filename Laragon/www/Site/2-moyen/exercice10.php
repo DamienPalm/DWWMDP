@@ -42,13 +42,15 @@ $stagiaire4 = new Stagiaire ("Fred", [20, 17, 16, 18, 15]);
 $stagiaires = [$stagiaire1, $stagiaire2, $stagiaire3, $stagiaire4];
 
 foreach($stagiaires as $stagiaire){
-    echo $stagiaire->getNom() . " ";
+    echo $stagiaire->getNom() . " : ";
     foreach($stagiaire->getNote() as $value){
         echo $value . " ";
     }
-    echo " La moyenne du stagiaire est de : ";
+    echo "" . "<br>" . " La moyenne du stagiaire est de : ";
     echo calculerMoyenne($stagiaire->getNote()) . "<br>";
-    echo "La note la plus haute est : ";
+    echo "Sa meilleur note est : " . max($stagiaire->getNote()) . "<br>";
+    echo "Sa pire note est : " . min($stagiaire->getNote()) . "<br>";
+    echo "-----------------------------------------------------------" . "<br>";
 }
 
 

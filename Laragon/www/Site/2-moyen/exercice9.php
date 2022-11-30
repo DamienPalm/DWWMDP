@@ -112,7 +112,6 @@ if (isset($_GET["RolceRoyce"])) {
         if ($marque = $voiture->getMarque() == "RolceRoyce") {
             echo "Marque : " . $voiture->getMarque() . "<br>" . "Model : " . $voiture->getModel() . "<br>" . "Couleur : " . $voiture->getCouleur() . "<br>" .
                 "Nombre de porte : " . $voiture->getPorte() . "<br>" . "Type de voiture : " . $car . "<br>";
-            echo "--------------------------" . "<br>";
         }
     }
 }
