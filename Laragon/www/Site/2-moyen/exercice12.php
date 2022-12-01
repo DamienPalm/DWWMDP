@@ -16,6 +16,11 @@ class Livre{
         $this->date = $date;
     }
 
+    public function __toString(){
+        $afficher = "Titre du livre : " . $this->nom . "<br>" . "Edition : " . $this->edition . "<br>" . "Auteur : " . $this->auteur . "<br>" . "Date de parution : " . $this->date;
+        return $afficher;
+    }
+
     public function getNom(){
         return $this->nom;
     }
@@ -50,11 +55,6 @@ class Livre{
 
     public function afficher(){
         echo $this->__toString();
-    }
-
-    public function __toString(){
-        $afficher = "Titre du livre : " . $this->nom . "<br>" . "Edition : " . $this->edition . "<br>" . "Auteur : " . $this->auteur . "<br>" . "Date de parution : " . $this->date;
-        return $afficher;
     }
 }
 

@@ -43,11 +43,11 @@ $stagiaires = [$stagiaire1, $stagiaire2, $stagiaire3, $stagiaire4];
 
 foreach($stagiaires as $stagiaire){
     if ($stagiaire->getSexe() === true) {
-        $sexe = " homme";
+        $sexe = " Homme";
     } else {
-        $sexe = " femme";
+        $sexe = " Femme";
     }
-echo $stagiaire->getNom() . $sexe . "<br>";
+echo "Nom : " . $stagiaire->getNom() . "<br>" . "Sexe : " . $sexe . "<br>" . "---------------------------------------" . "<br>";
 }
 
 ?>
