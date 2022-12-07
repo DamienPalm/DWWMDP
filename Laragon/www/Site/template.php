@@ -20,7 +20,7 @@
       <div class="collapse navbar-collapse" id="navbarColor01">
         <ul class="navbar-nav me-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="index.php">Accueil
+            <a class="nav-link active" href="/site/index.php">Accueil
               <span class="visually-hidden">(current)</span>
             </a>
           </li>
@@ -28,7 +28,7 @@
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Facile</a>
             <div class="dropdown-menu">
               <?php for ($i = 1 ; $i<= 4 ; $i++) : ?>
-                <a class="dropdown-item" href="../site/1-facile/exercice<?=$i ?>.php">exercice<?=$i ?></a>
+                <a class="dropdown-item" href="/site/1-facile/exercice<?=$i ?>.php">exercice<?=$i ?></a>
               <?php endfor; ?>
             </div>
           </li>
@@ -36,7 +36,7 @@
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Moyen</a>
             <div class="dropdown-menu">
             <?php for ($i = 1 ; $i<= 15 ; $i++) : ?>
-              <a class="dropdown-item" href="../site/2-moyen/exercice<?=$i ?>.php">exercice<?=$i ?></a>
+              <a class="dropdown-item" href="/site/2-moyen/exercice<?=$i ?>.php">exercice<?=$i ?></a>
               <?php endfor; ?>
             </div>
           </li>
@@ -44,7 +44,7 @@
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dificile</a>
             <div class="dropdown-menu">
             <?php for ($i = 1 ; $i<= 2 ; $i++) : ?>
-              <a class="dropdown-item" href="../site/3-difficile/exercice<?=$i ?>.php">exercice<?=$i ?></a>
+              <a class="dropdown-item" href="/site/3-difficile/exercice<?=$i ?>.php">exercice<?=$i ?></a>
             <?php endfor; ?>
             </div>
           </li>
