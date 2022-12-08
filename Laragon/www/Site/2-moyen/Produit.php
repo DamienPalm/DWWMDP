@@ -53,4 +53,11 @@ class Produit
     {
         $this->pxUnitaireTTC = $pxUnitaireTTC;
     }
+
+    public function afficherSesInfos(){
+        echo "Libelle : " . $this->libelle . "<br>";
+        echo "Description : " . $this->description . "<br>";
+        echo "Référence : " . $this->reference . "<br>";
+        echo "Prix unitaire TTC : " . $this->pxUnitaireTTC . "€" . "<br>";
+    }
 }

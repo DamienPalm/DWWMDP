@@ -43,4 +43,10 @@ class Client
     {
         $this->numClient = $numClient;
     }
+
+    public function afficher(){
+        echo "Nom : " . $this->nom . "<br>";
+        echo "Prenom : " . $this->prenom . "<br>";
+        echo "N° Client : " . $this->numClient . "<br>";
+    }
 }
