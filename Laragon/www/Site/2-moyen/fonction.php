@@ -27,5 +27,3 @@ function estTableauPair ($tab){
         echo "Ce tableau ne contient pas que des nombres pairs";
     }
 }
-
-?>

@@ -1,4 +1,4 @@
-<?php ob_start()?>
+<?php ob_start() ?>
 
 <form action="" method="post">
     <p>Nombre : <input type="number" name="nb" /></p>
@@ -7,12 +7,11 @@
 
 <?php
 
-$nb= $_POST['nb'];
+$nb = $_POST['nb'];
 
-if($nb%2==0){
+if ($nb % 2 == 0) {
     echo $nb . " est pair";
-}
-else{
+} else {
     echo $nb . " est impair";
 }
 
@@ -20,6 +19,6 @@ else{
 
 <?php
 $content = ob_get_clean();
-$titre="Exercice4";
+$titre = "Exercice4";
 require "../template.php"
 ?>

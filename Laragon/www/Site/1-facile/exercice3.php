@@ -1,4 +1,4 @@
-<?php ob_start()?>
+<?php ob_start() ?>
 
 <form action="" method="get">
     <p>Pseudo : <input type="string" name="pseudo" /></p>
@@ -17,6 +17,6 @@ echo "Votre pseudo est : " . $pseudo . " et vous avez " . $age . "ans";
 
 <?php
 $content = ob_get_clean();
-$titre= "Exercice3";
+$titre = "Exercice3";
 require "../template.php"
 ?>

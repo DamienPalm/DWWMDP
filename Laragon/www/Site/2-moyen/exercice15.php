@@ -1,4 +1,4 @@
-<?php ob_start()?>
+<?php ob_start() ?>
 
 
 <?php
@@ -14,10 +14,10 @@ $recupPlayer = [$player1, $player2];
 $recupArmes = [$arme1, $arme2];
 
 
-foreach ($recupPlayer as $value){
+foreach ($recupPlayer as $value) {
     $value->presentationPlayer();
 }
-foreach ($recupArmes as $value){
+foreach ($recupArmes as $value) {
     $value->presentationArme();
 }
 

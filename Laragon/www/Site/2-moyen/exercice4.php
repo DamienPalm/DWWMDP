@@ -1,22 +1,22 @@
-<?php ob_start()?>
+<?php ob_start() ?>
 
 
 <form action="" method="get">
-    <input type="button" value="Animaux" name="Animaux"/>
-    <input type="button" value="Chien" name="Chien"/>
-    <input type="button" value="Chat" name="Chat"/>
+    <input type="button" value="Animaux" name="Animaux" />
+    <input type="button" value="Chien" name="Chien" />
+    <input type="button" value="Chat" name="Chat" />
 </form>
 
 <?php
 require "fonction.php";
 
 $tab1 = ['Nom' => "Myla", 'Âge' => 6, 'Type' => "Chien"];
-$tab2 = ['Nom' => "Sparrow", 'Âge'=> 7, 'Type' => "Chat"];
+$tab2 = ['Nom' => "Sparrow", 'Âge' => 7, 'Type' => "Chat"];
 $tab3 = ['Nom' => "Hina", 'Âge' => 8, 'Type' => "Chat"];
 
-$tabAnimaux =[
+$tabAnimaux = [
     array('Nom' => "Myla", 'Âge' => 6, 'Type' => "Chien"),
-    array('Nom' => "Sparrow", 'Âge'=> 7, 'Type' => "Chat"),
+    array('Nom' => "Sparrow", 'Âge' => 7, 'Type' => "Chat"),
     array('Nom' => "Hina", 'Âge' => 8, 'Type' => "Chat")
 ];
 

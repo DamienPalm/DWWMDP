@@ -1,4 +1,4 @@
-<?php ob_start()?>
+<?php ob_start() ?>
 
 
 <?php
@@ -11,27 +11,26 @@ $employe2 = new Employe("Simon", "Jeremy", "179028955812", 1700.47, "assistant m
 $employe3 = new Employe("Odile", "Deray", "285097154678", 1900.14, "magasinière");
 $listeEmploye = [$employe1, $employe2, $employe3];
 
-foreach($listeEmploye as $value){
-    echo $value->__toString();
-    echo "-------------------------------------------------" . "<br>"; 
-    echo $value->effectueSonJob();
+foreach ($listeEmploye as $employe) {
+    echo $employe->__toString();
+    echo "-------------------------------------------------" . "<br>";
+    echo $employe->effectueSonJob();
     echo "-------------------------------------------------" . "<br>";
 }
 
-$cadre1 = new Cadre ("Alain", "Deloin", "1840259453666", 2100.23, "chef mécanicien", $listeEmploye);
+$cadre1 = new Cadre("Alain", "Deloin", "1840259453666", 2100.23, "chef mécanicien", $listeEmploye);
 $listeCadre = [$cadre1];
 
-foreach($listeCadre as $value){
-    echo $value->__toString();
+foreach ($listeCadre as $cadre) {
+    echo $cadre->__toString();
     echo "-------------------------------------------------" . "<br>";
 }
 
-
-
-
-
-
-
+echo $cadre1->augmenteUnSalarie($employe1, 10) . "<br>";
+echo $cadre1->manage($employe1, $cadre1);
+echo "---------------------------------------------------" . "<br>";
+echo $cadre1->augmenteUnSalarie($employe3, 20) . "<br>";
+echo $cadre1->manage($employe3, $cadre1);
 
 
 

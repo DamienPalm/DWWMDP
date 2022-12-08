@@ -1,26 +1,24 @@
-<?php ob_start()?>
+<?php ob_start() ?>
 
 <?php
 
-$nom= "Marie";
-$age= 30;
-$homme= false;
+$nom = "Marie";
+$age = 30;
+$homme = false;
 
-$nom2= "Pierre";
-$age2= 32;
-$homme2=true;
+$nom2 = "Pierre";
+$age2 = 32;
+$homme2 = true;
 
-if ($homme){
+if ($homme) {
     echo $nom . " a " . $age . " ans et c'est un homme" . "<br>" . "" . "<br>";
-}
-else{
+} else {
     echo $nom . " a " . $age . " ans et c'est une femme" . "<br>" . "" . "<br>";
 }
 
-if ($homme2){
+if ($homme2) {
     echo $nom2 . " a " . $age2 . " ans et c'est un homme";
-}
-else{
+} else {
     echo $nom2 . " a " . $age2 . " ans et c'est une femme";
 }
 

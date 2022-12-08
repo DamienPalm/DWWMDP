@@ -38,5 +38,3 @@ class Maison{
         echo "<b>Surface : </b>" . $this->surface . "<br>";
     }
 }
-
-?>

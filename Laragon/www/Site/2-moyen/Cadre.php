@@ -1,7 +1,8 @@
 <?php
 
 
-Class Cadre extends Employe{
+class Cadre extends Employe
+{
     private array $listeEmploye;
 
     public function __construct($prenom, $nom, $numSecu, $salaire, $job, $listeEmploye)
@@ -14,41 +15,81 @@ Class Cadre extends Employe{
         $this->listeEmploye = $listeEmploye;
     }
 
-                        // GETTER
+    // GETTER
 
-    public function getPrenom(){return $this->prenom;}
-    public function getNom(){return $this->nom;}
-    public function getNumSecu(){return $this->numSecu;}
-    public function getSalaire(){return $this->salaire;}
-    public function getJob(){return $this->job;}
-    public function getListeEmploye(){return $this->listeEmploye;}
-                    
-                        // SETTER
-                        
-    public function setPrenom($prenom){$this->prenom = $prenom;}
-    public function setNom($nom){$this->nom = $nom;}
-    public function setNumSecu($numSecu){$this->numSecu = $numSecu;}
-    public function setSalaire($salaire){$this->salaire = $salaire;}
-    public function setJob($job){$this->job = $job;}
-    public function setListeEmploye($listeEmploye){$this->listeEmploye = $listeEmploye;}
+    public function getPrenom()
+    {
+        return $this->prenom;
+    }
+    public function getNom()
+    {
+        return $this->nom;
+    }
+    public function getNumSecu()
+    {
+        return $this->numSecu;
+    }
+    public function getSalaire()
+    {
+        return $this->salaire;
+    }
+    public function getJob()
+    {
+        return $this->job;
+    }
+    public function getListeEmploye()
+    {
+        return $this->listeEmploye;
+    }
 
-    public function __toString(){
+    // SETTER
+
+    public function setPrenom($prenom)
+    {
+        $this->prenom = $prenom;
+    }
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+    }
+    public function setNumSecu($numSecu)
+    {
+        $this->numSecu = $numSecu;
+    }
+    public function setSalaire($salaire)
+    {
+        $this->salaire = $salaire;
+    }
+    public function setJob($job)
+    {
+        $this->job = $job;
+    }
+    public function setListeEmploye($listeEmploye)
+    {
+        $this->listeEmploye = $listeEmploye;
+    }
+
+    public function __toString()
+    {
         $afficher = "Prenom : " . $this->prenom . "<br>" . "Nom : " . $this->nom . "<br>" . "Numéro de sécurité : " . $this->numSecu . "<br>" . "Salaire : " . $this->salaire . "€" . "<br>" . "Job : " . $this->job . "<br>";
         return $afficher;
     }
 
-    public function afficher(){
+    public function afficher()
+    {
         echo $this->__toString();
     }
 
-    public function manage($listeEmploye){
-        $listeEmploye->setNom();
+    public function manage(Employe $employe, Cadre $cadre)
+    {
+        echo "Managé par : " . $cadre->getPrenom() . " " . $cadre->getNom() . "<br>";
     }
 
-    public function augmenteUnSalarie(Employe $employe, $pourcentage){
-        $augmentation = $employe->salaire * (1+($pourcentage/100));
-        echo $augmentation;
+    public function augmenteUnSalarie(Employe $employe, $pourcentage)
+    {
+        $augmentation = $employe->getSalaire() * (1 + ($pourcentage / 100));
+        echo $employe;
+        echo "Salaire après augmentation : ";
+        return $augmentation . "€";
     }
-                    
 }
-

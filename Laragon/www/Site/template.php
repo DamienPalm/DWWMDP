@@ -27,25 +27,25 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Facile</a>
             <div class="dropdown-menu">
-              <?php for ($i = 1 ; $i<= 4 ; $i++) : ?>
-                <a class="dropdown-item" href="/site/1-facile/exercice<?=$i ?>.php">exercice<?=$i ?></a>
+              <?php for ($i = 1; $i <= 4; $i++) : ?>
+                <a class="dropdown-item" href="/site/1-facile/exercice<?= $i ?>.php">exercice<?= $i ?></a>
               <?php endfor; ?>
             </div>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Moyen</a>
             <div class="dropdown-menu">
-            <?php for ($i = 1 ; $i<= 16 ; $i++) : ?>
-              <a class="dropdown-item" href="/site/2-moyen/exercice<?=$i ?>.php">exercice<?=$i ?></a>
+              <?php for ($i = 1; $i <= 17; $i++) : ?>
+                <a class="dropdown-item" href="/site/2-moyen/exercice<?= $i ?>.php">exercice<?= $i ?></a>
               <?php endfor; ?>
             </div>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dificile</a>
             <div class="dropdown-menu">
-            <?php for ($i = 1 ; $i<= 2 ; $i++) : ?>
-              <a class="dropdown-item" href="/site/3-difficile/exercice<?=$i ?>.php">exercice<?=$i ?></a>
-            <?php endfor; ?>
+              <?php for ($i = 1; $i <= 2; $i++) : ?>
+                <a class="dropdown-item" href="/site/3-difficile/exercice<?= $i ?>.php">exercice<?= $i ?></a>
+              <?php endfor; ?>
             </div>
           </li>
           <li class="nav-item dropdown">

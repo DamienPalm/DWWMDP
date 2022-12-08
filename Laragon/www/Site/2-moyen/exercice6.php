@@ -1,22 +1,23 @@
-<?php ob_start()?>
+<?php ob_start() ?>
 
 
 <?php
 
-class Ville {
+class Ville
+{
     public $nom;
     public $dep;
 
-    public function __construct($nom, $dep){
+    public function __construct($nom, $dep)
+    {
         $this->nom = $nom;
         $this->departement = $dep;
         echo " la ville $this->nom est dans le département $this->departement" . "<br>";
-
     }
 }
 
-$ville1 = new Ville ("Arras", "Pas-de-Calais");
-$ville2 = new Ville ("Bray-Dunes", "Nord");
+$ville1 = new Ville("Arras", "Pas-de-Calais");
+$ville2 = new Ville("Bray-Dunes", "Nord");
 
 ?>
 
