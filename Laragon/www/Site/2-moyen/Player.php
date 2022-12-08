@@ -5,14 +5,12 @@ class Player
     private $nom;
     private $force;
     private $pv;
-    private $arme;
+    private $idArme;
 
-    public function __construct($nom, $force, $pv, $arme)
+    public function __construct()
     {
-        $this->nom = $nom;
-        $this->force = $force;
-        $this->pv = $pv;
-        $this->arme = $arme;
+        $this->force = 5;
+        $this->pv = 100;
     }
 
     public function getNom()
@@ -27,18 +25,29 @@ class Player
     {
         return $this->pv;
     }
-    public function getArme()
+    public function getIdArme()
     {
-        return $this->arme;
+        return $this->idArme;
+    }
+
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+    }
+    
+    public function setIdArme($idArme)
+    {
+        $this->idArme = $idArme;
     }
 
 
 
     public function presentationPlayer()
     {
+        $armes = Armes::recupererArme($this->id);
         echo "Nom : " . $this->nom . "<br/>";
         echo "Force : " . $this->force . "<br/>";
         echo "PV : " . $this->pv . "<br/>";
-        echo "Arme : " . $this->arme . "<br>";
+        echo "Arme : " . $this->idArme . "<br>";
     }
 }

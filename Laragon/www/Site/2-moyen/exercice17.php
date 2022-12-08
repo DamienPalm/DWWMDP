@@ -26,7 +26,13 @@ foreach ($listeProduits as $produit){
 ?>
 
 <form action="" method="post">
-    <p>Produit souhaité : <input type="string" name="Produit" /></p>
+    <p><input type="checkbox" name="Produit" /> <?= $produit1->getDescription() . "<br>" ?></p>
+    <p>Quantité souhaité : <input type="number" name="Quantité" /></p>
+    <p><input type="checkbox" name="Produit" /> <?= $produit2->getDescription() . "<br>" ?></p>
+    <p>Quantité souhaité : <input type="number" name="Quantité" /></p>
+    <p><input type="checkbox" name="Produit" /> <?= $produit3->getDescription() . "<br>" ?></p>
+    <p>Quantité souhaité : <input type="number" name="Quantité" /></p>
+    <p><input type="checkbox" name="Produit" /> <?= $produit4->getDescription() . "<br>" ?></p>
     <p>Quantité souhaité : <input type="number" name="Quantité" /></p>
     <p><input type="submit" value="Valider"></p>
 </form>

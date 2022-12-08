@@ -3,18 +3,18 @@
 class Armes
 {
     private static $identifiant = 1;
-    private static $arme = [];
+    private static $armes = [];
     private $id;
     private $nom;
     private $degat;
 
     public function __construct($nom, $degat)
     {
+        $this->id = self::$identifiant;
+        self::$identifiant++;
         $this->nom = $nom;
         $this->degat = $degat;
-        $id = self::$identifiant++;
-        $this->id = $id;
-        self::$arme;
+        self::$armes[] = $this;
     }
 
     public function getId()
@@ -30,10 +30,27 @@ class Armes
         return $this->degat;
     }
 
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+    }
+    public function setDegat($degat)
+    {
+        $this->degat = $degat;
+    }
+
     public function presentationArme()
     {
         echo "ID : " . $this->id . "<br>";
         echo "Nom : " . $this->nom . "<br/>";
         echo "Degat : " . $this->degat . "<br/>";
+    }
+
+    public function recupererArme($id){
+        foreach(self::$armes as $arme){
+            if($id == $arme->id){
+                return $arme;
+            }
+        }
     }
 }
