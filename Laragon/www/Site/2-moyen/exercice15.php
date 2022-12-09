@@ -18,7 +18,7 @@ $player2 = new Player();
 $player2->setNom("Fifi");
 $player2->setIdArme($arme2->getId());
 echo $player2;
-
+ 
 
 ?>
 

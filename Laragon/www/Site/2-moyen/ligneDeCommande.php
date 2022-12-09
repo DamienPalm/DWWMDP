@@ -21,4 +21,12 @@ class LigneDeProduit
     {
         $this->qte = $qte;
     }
+
+    public function calculTotalLigneTTC(Produit $produit, $qte){
+        $TTC = $produit->getPxUnitaireTTC() * $qte;
+        return $TTC;
+    }
+    
+
+    
 }

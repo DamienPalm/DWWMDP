@@ -35,6 +35,16 @@ class Player
         $this->nom = $nom;
     }
     
+    public function setForce($force)
+    {
+        $this->force = $force;
+    }
+
+    public function setPv($pv)
+    {
+        $this->pv = $pv;
+    }
+
     public function setIdArme($idArme)
     {
         $this->idArme = $idArme;
@@ -42,12 +52,13 @@ class Player
 
 
 
-    public function presentationPlayer()
-    {
-        $armes = Armes::recupererArme($this->id);
-        echo "Nom : " . $this->nom . "<br/>";
-        echo "Force : " . $this->force . "<br/>";
-        echo "PV : " . $this->pv . "<br/>";
-        echo "Arme : " . $this->idArme . "<br>";
+    public function __toString(){
+        $arme = Armes::recupererArme($this->idArme);
+        $txt = "Nom : ". $this->nom . "<br />";
+        $txt .= "Force : ". $this->force . "<br />";
+        $txt .= "PV : ". $this->pv . "<br />";
+        $txt .= "Arme : ". $this->idArme . "<br />";
+        $txt .= $arme;
+        return $txt;
     }
 }

@@ -39,16 +39,16 @@ class Armes
         $this->degat = $degat;
     }
 
-    public function presentationArme()
-    {
-        echo "ID : " . $this->id . "<br>";
-        echo "Nom : " . $this->nom . "<br/>";
-        echo "Degat : " . $this->degat . "<br/>";
+    public function __toString(){
+        $txt = "ID : ". $this->id . "<br />";
+        $txt .= "Nom : ". $this->nom . "<br />";
+        $txt .= "Degat : ". $this->degat . "<br />";
+        return $txt;
     }
 
-    public function recupererArme($id){
+    public static function recupererArme($id){
         foreach(self::$armes as $arme){
-            if($id == $arme->id){
+            if($id === $arme->id){
                 return $arme;
             }
         }
