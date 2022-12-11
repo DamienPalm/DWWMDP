@@ -6,13 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Site d'Exercice</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://bootswatch.com/5/flatly/bootstrap.min.css">
+  <link rel="stylesheet" href="https://bootswatch.com/5/quartz/bootstrap.min.css">
 </head>
 
-<body>
+<body style="background : linear-gradient(320deg,rgb(242, 113, 33),rgb(233, 64, 87),rgb(138, 35, 135)); background-repeat : no-repeat; min-height: 100vh; font-family: 'Montserrat', sans-serif;">
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -28,7 +29,7 @@
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Facile</a>
             <div class="dropdown-menu">
               <?php for ($i = 1; $i <= 4; $i++) : ?>
-                <a class="dropdown-item" href="/site/1-facile/exercice<?= $i ?>.php">exercice<?= $i ?></a>
+                <a class="dropdown-item" href="/site/1-facile/exercice<?= $i ?>/exercice.php">exercice<?= $i ?></a>
               <?php endfor; ?>
             </div>
           </li>
@@ -36,7 +37,7 @@
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Moyen</a>
             <div class="dropdown-menu">
               <?php for ($i = 1; $i <= 17; $i++) : ?>
-                <a class="dropdown-item" href="/site/2-moyen/exercice<?= $i ?>.php">exercice<?= $i ?></a>
+                <a class="dropdown-item" href="/site/2-moyen/exercice<?= $i ?>/exercice.php">exercice<?= $i ?></a>
               <?php endfor; ?>
             </div>
           </li>
@@ -44,7 +45,7 @@
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dificile</a>
             <div class="dropdown-menu">
               <?php for ($i = 1; $i <= 2; $i++) : ?>
-                <a class="dropdown-item" href="/site/3-difficile/exercice<?= $i ?>.php">exercice<?= $i ?></a>
+                <a class="dropdown-item" href="/site/3-difficile/exercice<?= $i ?>/exercice.php">exercice<?= $i ?></a>
               <?php endfor; ?>
             </div>
           </li>
@@ -64,7 +65,7 @@
   </nav>
 
   <div class="container">
-    <h1 class="rounded border border-dark p-2 m-2 bg-info text-light"><?= $titre ?></h1>
+    <h1 class="rounded border border-dark p-2 m-2 bg-dark text-light"><?= $titre ?></h1>
     <?= $content ?>
   </div>
 

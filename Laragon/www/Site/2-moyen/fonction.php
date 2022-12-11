@@ -8,7 +8,7 @@ function affichage ($tab){
 
 function afficherTableau ($tab){
     foreach ($tab as $value){
-        echo $value . " ";
+        echo $value . " | ";
     }
 }
 
