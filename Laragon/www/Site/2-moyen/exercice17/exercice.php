@@ -32,9 +32,8 @@ echo "</div>" . "<br>";
 
 
 <form action="" method="post">
-    <label class="col-form-label col-form-label-lg mt-4" for="durdur">
-        <div class="dropdown">
-            <button class=" form-control form-control-lg btn btn-dark dropdown-toggle" id="durdur" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <div class="dropdown col-3">
+            <button class=" form-control form-control-lg btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Selectionner un produit
             </button>
             <ul class="dropdown-menu">
@@ -44,11 +43,27 @@ echo "</div>" . "<br>";
                 <li><input class="dropdown-item" type="submit" value="<?= $produit4->getDescription() ?>" name="produit" /></li>
             </ul>
         </div>
-        <input class="form-control form-control-lg btn btn-dark" type="number" id="durdur" placeholder="Quantité souhaitée" name="quantite">
-    </label>
 </form>
 
 <?php
+
+$continuer = "Oui";
+
+if(isset($_POST["produit"])){
+    echo "<form action='' method='post'>";
+    echo "<label class='col-3 col-form-label col-form-label-lg mt-4' for='quantité'>";
+    echo "<input class='form-control form-control-lg btn btn-dark' type='number' placeholder='Quantité souhaitée' id='quantité' name='quantité'>";
+    echo "<input class='form-control form-control-lg btn btn-dark' type='submit' value='Validez' id='quantité' name='valider'";
+    echo "</label>";
+    echo "</form>";
+
+    if(isset($_POST["valider"])){
+        echo $LignedeCommande->calculTotalLigneTTC($_POST["produit"]->getPxUnitaireTTC(), $quantité);
+    }
+}
+else{
+    echo "Veuillez choisir un produit";
+}
 
 ?>
 <?php
