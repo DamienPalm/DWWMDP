@@ -70,13 +70,10 @@ class Employe
         return $afficher;
     }
 
-    public function afficher()
-    {
-        echo $this->__toString();
-    }
-
     public function effectueSonJob()
     {
+        // SWITCH au lieux de répéter des if
+
         if ($this->job == "soudeur") {
             echo " <b>Le soudeur </b> réalise des travaux d'assemblage, d'installation, de modification " . "<br>" . " et de maintenance de réseaux de tuyauteries ou d'élèments chaudronnés." . "<br>" . "En fonction des soudures, il travaille au chalumeau, au laser.." . "<br>";
         }

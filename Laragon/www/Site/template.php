@@ -36,7 +36,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Moyen</a>
             <div class="dropdown-menu">
-              <?php for ($i = 1; $i <= 17; $i++) : ?>
+              <?php for ($i = 1; $i <= 18; $i++) : ?>
                 <a class="dropdown-item" href="/site/2-moyen/exercice<?= $i ?>/exercice.php">exercice<?= $i ?></a>
               <?php endfor; ?>
             </div>

@@ -80,9 +80,13 @@ class Cadre extends Employe
         echo $this->__toString();
     }
 
-    public function manage(Employe $employe, Cadre $cadre)
+    public function manage()
     {
-        echo "Managé par : " . $cadre->getPrenom() . " " . $cadre->getNom() . "<br>";
+        $phrase = "Le manager manage : ";
+        foreach ($this->getListeEmploye() as $employe){
+            $phrase = $phrase . $employe->getNom() . ", ";
+        }
+        return $phrase;
     }
 
     public function augmenteUnSalarie(Employe $employe, $pourcentage)
