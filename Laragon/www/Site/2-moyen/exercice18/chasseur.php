@@ -34,7 +34,7 @@ class Chasseur extends Humain
 
     public function seDeplacer()
     {
-        $phrase = $this->getNom() . "avance avec son fusil" . "\n";
+        $phrase = $this->getNom() . " avance avec son fusil" . "\n";
         return $phrase;
     }
 }
