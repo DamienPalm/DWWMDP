@@ -2,5 +2,5 @@
 
 interface Deplacement
 {
-    public function seDeplacer($deplacement);
+    public function seDeplacer();
 }

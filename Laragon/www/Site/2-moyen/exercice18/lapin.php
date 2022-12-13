@@ -1,5 +1,7 @@
 <?php
 
+require "animal.php";
+
 class Lapin extends Animal
 {
     private bool $enVie;
@@ -19,4 +21,6 @@ class Lapin extends Animal
     {
         $this->enVie = $enVie;
     }
+
+    public function seNourrir(){}
 }

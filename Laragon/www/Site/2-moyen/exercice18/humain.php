@@ -1,12 +1,10 @@
 <?php
 
+require_once "deplacement.php";
+
 abstract class Humain implements Deplacement
 {
     private string $nom;
-
-    public function Sedeplacer($deplacement){
-        $this->deplacement = $deplacement;
-    }
 
     protected function __construct($nom)
     {
@@ -22,4 +20,6 @@ abstract class Humain implements Deplacement
     {
         $this->nom = $nom;
     }
+
+    public function Sedeplacer(){}
 }

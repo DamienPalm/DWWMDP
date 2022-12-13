@@ -29,9 +29,7 @@ echo "</p>";
 echo "</div>";
 echo "</div>" . "<br>";
 $continuer = "Oui";
-while($continuer=="Oui"){
 ?>
-
 
 <form action="" method="get">
     <div class="dropdown col-3">
@@ -39,48 +37,23 @@ while($continuer=="Oui"){
             Selectionner un produit
         </button>
         <ul class="dropdown-menu">
-            <li><input class="dropdown-item" type="submit" value="<?= $produit1->getDescription() ?>" name="<?= $produit1->getDescription() ?>" /></li>
-            <li><input class="dropdown-item" type="submit" value="<?= $produit2->getDescription() ?>" name="<?= $produit2->getDescription() ?>" /></li>
-            <li><input class="dropdown-item" type="submit" value="<?= $produit3->getDescription() ?>" name="<?= $produit3->getDescription() ?>" /></li>
-            <li><input class="dropdown-item" type="submit" value="<?= $produit4->getDescription() ?>" name="<?= $produit4->getDescription() ?>" /></li>
+            <li><input class="dropdown-item" type="submit" value=<?= $produit1->getDescription() ?> name=<?= $produit1->getDescription() ?>/></li>
+            <li><input class="dropdown-item" type="submit" value=<?= $produit2->getDescription() ?> name=<?= $produit2->getDescription() ?>/></li>
+            <li><input class="dropdown-item" type="submit" value=<?= $produit3->getDescription() ?> name=<?= $produit3->getDescription() ?>/></li>
+            <li><input class="dropdown-item" type="submit" value=<?= $produit4->getDescription() ?> name=<?= $produit4->getDescription() ?>/></li>
         </ul>
+    </div>
+    <div class='col-3 col-form-label col-form-label-lg mt-4'>
+        <input class='form-control form-control-lg btn btn-dark' type='number' placeholder='Quantité souhaitée' name='quantité'>
+        <input class='form-control form-control-lg btn btn-dark' type='submit' value='Validez' name='valider'>
+    </div>
+    <div>
+        <input class='btn btn-dark' type='submit' value='Continuer' name='continue'>
+        <input class='btn btn-dark' type='submit' value='Payer' name='paie'>
     </div>
 </form>
 
-<div>
-    <?php
-
-    
-    foreach ($listeProduits as $produit) {
-        if (isset($_GET[$produit->getDescription()])) {
-            echo "<form action='' method='get'>";
-            echo "<div class='col-3 col-form-label col-form-label-lg mt-4'>";
-            echo "<input class='form-control form-control-lg btn btn-dark' type='number' placeholder='Quantité souhaitée' name='quantité'>";
-            echo "<input class='form-control form-control-lg btn btn-dark' type='submit' value='Validez' name='valider'>";
-            echo "</div>";
-            echo "</form>";
-            
-        } else {
-            echo "Veuillez choisir un produit";
-        }
-
-        if (isset($_GET["valider"])) { ?>
-
-            <p class><?php echo $_GET["quantité"] ?></p><?php
-        }
-    }
-    echo"<input type='submit' value='Voulez-vous continuer' name='continue' >";
-    echo"<input type='submit' value='Payer' name='paie' >";
-    if ($_POST["continue"]){
-        $continuer="Oui";
-    }
-    if ($_POST["paie"]){
-        $continuer="Non";
-    }
-    ?>
-</div>
 <?php
-}
 $content = ob_get_clean();
 $titre = "Exercice Commande";
 require "../../template.php";

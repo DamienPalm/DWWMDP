@@ -1,18 +1,17 @@
 <?php
 
+require_once "deplacement.php";
+
 abstract class Animal implements Deplacement{
     private string $couleur;
     private int $nombrePatte;
-
-    public function Sedeplacer($deplacement){
-        $this->deplacement = $deplacement;
-    }
 
     protected function __construct($couleur, $nombrePatte)
     {
         $this->couleur = $couleur;
         $this->nombrePatte = $nombrePatte;
     }
+
 
     public function getCouleur()
     {
@@ -24,6 +23,7 @@ abstract class Animal implements Deplacement{
         return $this->nombrePatte;
     }
 
+
     public function setCouleur($couleur)
     {
         $this->couleur = $couleur;
@@ -33,9 +33,9 @@ abstract class Animal implements Deplacement{
     {
         $this->nombrePatte = $nombrePatte;
     }
+    
 
-    public function crier()
-    {
-        echo "glapie";
-    }
+    public function seDeplacer(){}
+
+    public function crier(){}
 }
