@@ -35,7 +35,15 @@ abstract class Animal implements Deplacement{
     }
     
 
-    public function seDeplacer(){}
+    public function seDeplacer()
+    {
+        $phrase = "Le lapin " . $this->couleur . " s'enfuie sur ses " . $this->nombrePatte . " d'un seul bond !" . "\n";
+        return $phrase;
+    }
 
-    public function crier(){}
+    public function crier()
+    {
+        $phrase = "Le lapin glapie de peur" . "\n";
+        return $phrase;
+    }
 }

@@ -22,7 +22,7 @@ while($lapin->getEnVie()){
         $lapin->setEnVie(false);
         echo $lapin->seNourrir();
         echo $chasseur->seDeplacer();
-        echo $lapin->crier();
+        echo $lapin->crier(); 
         echo $chasseur->chasser();
         echo $lapin->seDeplacer();
     }

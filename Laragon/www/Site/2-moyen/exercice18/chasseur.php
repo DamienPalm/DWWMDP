@@ -1,6 +1,7 @@
 <?php
 require_once "humain.php";
 
+
 class Chasseur extends Humain
 {
     private string $arme;
@@ -28,7 +29,13 @@ class Chasseur extends Humain
 
     public function chasser()
     {
-        return $this->getNom() . " tire sur le lapin avec son fusil est ..." . "\n";
+        return $this->getNom() . " tire sur le lapin avec son fusil est ..." . $nombre= rand(1,6) . "\n";
+        if($nombre == 1 || $nombre == 6){
+            echo " le touche";
+        }
+        else{
+            echo " le rate";
+        }
     }
 
 
