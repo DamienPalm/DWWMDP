@@ -9,6 +9,7 @@ $player = new Player(0, $pseudo, 100, 20);
 echo $player->move();
 
 if(rand(1, 6) == 1 || rand(1, 6) == 6){
+    $combat = readline("Voulez-vous affronter le Bandit Manchot ? (Oui/Non)");
     $banditManchot = new BanditManchot;
     echo $banditManchot->winOrLose();
     echo $banditManchot->howManyWeWinOrLose($banditManchot, $player->getLifePoint());
