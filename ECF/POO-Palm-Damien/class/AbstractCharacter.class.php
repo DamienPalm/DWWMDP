@@ -20,6 +20,6 @@ Abstract class AbstractCharacter{
         while($pv>0){
             $pv = $pv - $pa;
         }
-        
+
     }
 }
