@@ -2,7 +2,7 @@
 
 if (isset($_GET['id']) && !empty(trim($_GET['id']))) {
     // inclure ma connexion
-    require_once "config.php";
+    require_once "../php/config.php";
 
     // prepare ma requete pour recupérer le use en fonction de l'id
     $sql = "SELECT * FROM users WHERE id = ?";
@@ -80,7 +80,7 @@ if (isset($_GET['id']) && !empty(trim($_GET['id']))) {
                 </div>
             </div>
         </div>
-        <a href="index.php" class="btn btn-secondary ml-2">Cancel</a>
+        <a href="../index.php" class="btn btn-secondary ml-2">Cancel</a>
     </div>
 
 
