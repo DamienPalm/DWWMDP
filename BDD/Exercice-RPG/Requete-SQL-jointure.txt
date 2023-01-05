@@ -1,0 +1,28 @@
+1°) Les jointures internes
+
+SELECT *
+FROM personnage
+INNER JOIN classe ON personnage.idPersonnage = classe.idClasse;
+
+SELECT nom, levelMin, degat, libelle, estDistance
+FROM arme
+INNER JOIN typeArme ON arme.idArme = typeArme.idTypeArme;
+
+2°) Les jointures et surnom de tables
+
+SELECT personnage.nom, classe.nom
+FROM personnage
+INNER JOIN classe ON personnage.idPersonnage = classe.idClasse;
+
+SELECT personnage.nom 'nom personnage', classe.nom 'nom classe'
+FROM personnage
+INNER JOIN classe ON personnage.idPersonnage = classe.idClasse;
+
+SELECT arme.nom
+FROM arme
+INNER JOIN personnage ON arme.idArme = personnage.idPersonnage;
+
+SELECT personnage.nom, arme.nom, arme.levelMin, arme.degat, typearme.libelle, typearme.estDistance
+FROM arme
+INNER JOIN personnage ON arme.idArme = personnage.idPersonnage
+INNER JOIN typearme ON arme.idArme = typearme.idTypeArme;
