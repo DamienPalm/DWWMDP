@@ -1,0 +1,34 @@
+1°) SELECT / FROM / AS
+
+SELECT * FROM personnage;
+SELECT * FROM arme;
+SELECT nom, levelMin FROM arme;
+SELECT nom, surnom, level FROM personnage;
+SELECT nom AS pseudo, level AS niveau FROM personnage;
+SELECT libelle AS `type d'armes du jeu` FROM typearme;
+
+
+2°) Les calculs, fonction COUNT/SUM/AVG/MIN/MAX
+
+SELECT COUNT(*) FROM arme;
+SELECT COUNT(*) AS nombre de personnage du jeu FROM personnage;
+SELECT ROUND(AVG(level),2) FROM personnage;
+SELECT SUM(baseForce), SUM(baseAgi), SUM(baseIntel) FROM classe;
+SELECT MIN(levelMin), MAX(levelMin) FROM arme;
+SELECT SUM(baseForce) + SUM(baseAgi) + SUM(baseIntel) FROM classe;
+
+
+3°) Les fonctions sur les chaînes de caractères : CONCAT/SUBSTRING/LEFT
+
+SELECT CONCAT(nom, ' | ', surnom) FROM personnage;
+SELECT CONCAT(nom, ' | ', baseForce, ' | ', baseAgi, ' | ', baseIntel) FROM classe;
+SELECT SUBSTRING(nom, 1, 6) FROM personnage; SELECT LEFT(nom, 6) FROM personnage;
+SELECT CONCAT(SUBSTRING(nom, 1, 5), ' | ', SUBSTRING(description, 1, 20)) FROM classe; SELECT CONCAT(LEFT(nom, 5), ' | ', LEFT(description, 20)) FROM classe;
+
+
+4°) Filtrer les données avec le mot clef WHERE
+
+SELECT * FROM arme WHERE levelMin > 4;
+SELECT * FROM arme WHERE degat < 25;
+SELECT nom, surnom FROM personnage WHERE level = 10;
+SELECT * FROM `typearme` WHERE estDistance = 1;
