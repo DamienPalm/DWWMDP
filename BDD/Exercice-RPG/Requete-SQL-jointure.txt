@@ -12,17 +12,17 @@ INNER JOIN typeArme ON arme.idArme = typeArme.idTypeArme;
 
 SELECT personnage.nom, classe.nom
 FROM personnage
-INNER JOIN classe ON personnage.idPersonnage = classe.idClasse;
+INNER JOIN classe ON personnage.idClasse = classe.idClasse;
 
-SELECT personnage.nom 'nom personnage', classe.nom 'nom classe'
-FROM personnage
-INNER JOIN classe ON personnage.idPersonnage = classe.idClasse;
+SELECT p.nom 'nom personnage', c.nom 'nom classe'
+FROM personnage p
+INNER JOIN classe c ON p.idClasse = c.idClasse;
 
 SELECT arme.nom
 FROM arme
-INNER JOIN personnage ON arme.idArme = personnage.idPersonnage;
+INNER JOIN personnage ON arme.idPersonnage = personnage.idPersonnage;
 
-SELECT personnage.nom, arme.nom, arme.levelMin, arme.degat, typearme.libelle, typearme.estDistance
-FROM arme
-INNER JOIN personnage ON arme.idArme = personnage.idPersonnage
-INNER JOIN typearme ON arme.idArme = typearme.idTypeArme;
+SELECT p.nom, a.nom, a.levelMin, a.degat, ta.libelle, ta.estDistance
+FROM arme a
+INNER JOIN personnage p ON a.idPersonnage = p.idPersonnage
+INNER JOIN typearme ta ON a.idTypeArme = ta.idTypeArme;
